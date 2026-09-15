@@ -1,45 +1,88 @@
+// data/products.ts
 export type Product = {
-    id: string;
-    name: string;
-    price: number;
-    category: "T-Shirts" | "Hoodies" | "Nueva Coleccion";
-    image: string;
+  id: string;
+  ref: string;
+  name: string;
+  category: "Playeras" | "Hoodies" | "Nueva colección";
+  price: number;
+  description: string;
+  composition: string;
+  fit: string;
+  colorway: string;
+  sizes: ("S" | "M" | "L" | "XL")[];
+  availability: string;
+  image: string;
 };
 
 export const products: Product[] = [
   {
     id: "1",
-    name: "Club Roma Brickell Avenue",
-    category: "Nueva Coleccion",
-    price: 0,
-    image: "/images/clubRoma-brickellAvenue.jpeg",
+    ref: "CR-001",
+    name: "CLUB ROMA FAMILY TEE",
+    category: "Playeras",
+    price: 0, 
+    description: "",
+    composition: "",
+    fit: "",
+    colorway: "",
+    sizes: [],
+    availability: "Disponibilidad inmediata",
+    image: "/images/clubRoma-friendsAndfamily.jpeg",
   },
   {
     id: "2",
-    name: "Club Roma Friends&Family",
-    category: "Nueva Coleccion",
+    ref: "CR-002",
+    name: "Studio TEE",
+    category: "Playeras",
     price: 0,
-    image: "/images/clubRoma-friends&family.jpeg",
+    description: "",
+    composition: "",
+    fit: "",
+    colorway: "",
+    sizes: [],
+    availability: "Disponibilidad inmediata",
+    image: "/images/clubRoma-brickellAvenue.jpeg",
   },
   {
     id: "3",
-    name: "Club Roma Man Essentials",
-    category: "Nueva Coleccion",
+    ref: "CR-003",
+    name: "MAN ESSENTIAL TEE",
+    category: "Playeras",
     price: 0,
+    description: "",
+    composition: "",
+    fit: "",
+    colorway: "",
+    sizes: [],
+    availability: "Disponibilidad inmediata",
     image: "/images/clubRoma-manEssential.jpeg",
   },
   {
     id: "4",
-    name: "Club Roma Members Only",
-    category: "Nueva Coleccion",
+    ref: "CR-004",
+    name: "MEMBERS ONLY 8-BALL",
+    category: "Playeras",
     price: 0,
+    description: "",
+    composition: "",
+    fit: "",
+    colorway: "",
+    sizes: [],
+    availability: "Disponibilidad inmediata",
     image: "/images/clubRoma-membersOnly.jpeg",
   },
   {
     id: "5",
-    name: "Club Roma No Risk No Story",
-    category: "Nueva Coleccion",
+    ref: "CR-005",
+    name: "Studio TEE",
+    category: "Playeras",
     price: 0,
+    description: "",
+    composition: "",
+    fit: "",
+    colorway: "",
+    sizes: [],
+    availability: "Disponibilidad inmediata",
     image: "/images/clubRoma-noRiskNoStory.jpeg",
   },
 ];
