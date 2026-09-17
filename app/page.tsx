@@ -8,6 +8,9 @@ import { products } from "@/data/products";
 import HowToBuy from "@/components/HowToBuy";
 import SizeGuide from "@/components/SizeGuide";
 import BrandStory from  "@/components/BrandStory";
+import BrandManifesto from "@/components/BrandManifesto";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   const [visibleProducts, setVisibleProducts] = useState(products);
 
@@ -23,6 +26,8 @@ export default function Home() {
       <HowToBuy />
       <SizeGuide />
       <BrandStory />
+      <BrandManifesto />
+      <Footer />
     </main>
   );
 }

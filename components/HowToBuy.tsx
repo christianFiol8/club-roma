@@ -6,13 +6,13 @@ const steps = [
   },
   {
     number: "02",
-    title: "Inquiry directo a WhatsApp",
-    description: "Haz click en el enlace de la prenda o escribe a nuestra línea de concierge. Confirmamos stock en tiempo real.",
+    title: "Contacto directo a WhatsApp",
+    description: "Haz click en el enlace de la prenda. Confirmamos stock en tiempo real.",
   },
   {
     number: "03",
-    title: "Pago & logística de entrega",
-    description: "Transferencia SPEI o pago contra entrega local en La Paz. Envíos foráneos a toda la república vía DHL Express.",
+    title: "Pago y logística de entrega",
+    description: "Transferencia SPEI o pago contra entrega local en La Paz. Envíos foráneos a toda la república.",
   },
 ];
 
