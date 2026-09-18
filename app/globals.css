@@ -27,3 +27,16 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker {
+  animation: ticker-scroll 20s linear infinite;
+}
