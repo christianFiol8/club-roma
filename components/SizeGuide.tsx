@@ -8,13 +8,13 @@ const sizes = [
 export default function SizeGuide() {
   return (
     <div className="border border-[#2A2A28] p-6 text-[#EDEAE3]">
-      <div className="flex justify-between items-start mb-1">
-        <p className="text-xs text-[#8A8378] uppercase">// Patronaje & medidas en plano</p>
-        <span className="text-xs border border-current px-2 py-1">Boxy / Oversized cut</span>
+      <div className="flex justify-between items-start mb-2">
+        <p className="text-xs text-teal-400 uppercase">// Patronaje & medidas en plano</p>
+        <span className="text-xs border border-current px-2 py-1 uppercase">Boxy / Oversized cut</span>
       </div>
-      <h3 className="text-lg uppercase mb-4">Technical Sizing Spec</h3>
+      <h3 className="text-lg uppercase font-bold mb-4">Technical Sizing Spec</h3>
 
-      <p className="text-xs text-[#8A8378] mb-4">
+      <p className="text-xs text-[#8A8378] mb-4 leading-relaxed">
         *Medidas tomadas con la prenda extendida horizontalmente sobre mesa de patronaje.
         Tolerancia dimensional: +/- 1.0 cm. Si prefieres un ajuste regular estándar, te
         sugerimos ordenar una talla menos a tu habitual.
@@ -22,17 +22,17 @@ export default function SizeGuide() {
 
       <table className="w-full text-xs">
         <thead>
-          <tr className="border-b border-[#2A2A28] text-[#8A8378] text-left">
-            <th className="py-2">Talla</th>
-            <th className="py-2">Ancho pecho (pit-to-pit)</th>
-            <th className="py-2">Largo total (hsp)</th>
-            <th className="py-2">Manga / caída</th>
+          <tr className="border-b border-[#2A2A28] text-teal-400 uppercase text-left">
+            <th className="py-2 font-normal">Talla</th>
+            <th className="py-2 font-normal">Ancho pecho (pit-to-pit)</th>
+            <th className="py-2 font-normal">Largo total (hsp)</th>
+            <th className="py-2 font-normal">Manga / caída</th>
           </tr>
         </thead>
         <tbody>
           {sizes.map((row) => (
             <tr key={row.talla} className="border-b border-[#2A2A28]">
-              <td className="py-2">{row.talla}</td>
+              <td className="py-2 text-orange-400">{row.talla}</td>
               <td className="py-2">{row.ancho}</td>
               <td className="py-2">{row.largo}</td>
               <td className="py-2">{row.manga}</td>
@@ -41,9 +41,9 @@ export default function SizeGuide() {
         </tbody>
       </table>
 
-      <div className="flex justify-between items-center mt-6 text-xs">
+      <div className="flex justify-between items-center mt-6 text-xs uppercase">
         <p className="text-[#8A8378]">Prendas pre-encogidas al vapor</p>
-        <a href="#" className="underline">¿Dudas sobre tu fit? Asesoría directa →</a>
+        <a href="#" className="text-teal-400 underline">¿Dudas sobre tu fit? Asesoría directa →</a>
       </div>
     </div>
   );
